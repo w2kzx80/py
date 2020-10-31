@@ -8,3 +8,4 @@ while (a<b):
     a=a*1.1
 
 print(day)
+
