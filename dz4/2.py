@@ -1,10 +1,3 @@
 from sys import argv
 
-def gcheck(a):
-    prev = int(a[0])
-    for acur in a:
-        if int(acur)>prev:
-            yield int(acur)
-            prev=int(acur)
-
-print([a for a in gcheck(argv[1:])])
+print([int(b) for i,b in enumerate(argv[2:]) if int(b)>int(argv[i+1])])
