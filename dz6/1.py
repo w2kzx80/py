@@ -12,7 +12,7 @@ class TrafficLight:
 
     def running(self):
         while True:
-            self.__color=self.__intervals[self.__i]['color']
+            self.__color = self.__intervals[self.__i]['color']
             print(self.__color)
             time.sleep(self.__intervals[self.__i]['interval'])
             self.__i += 1
