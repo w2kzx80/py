@@ -1,13 +1,13 @@
 import time
 
 class TrafficLight:
+    __intervals = [
+        {"color": "red", "interval": 7},
+        {"color": "yellow", "interval": 2},
+        {"color": "green", "interval": 10},
+    ]
     def __init__(self):
         self.__color = "red"
-        self.__intervals = [
-            {"color": "red", "interval": 7},
-            {"color": "yellow", "interval": 2},
-            {"color": "green", "interval": 10},
-        ]
         self.__i = 0
 
     def running(self):
