@@ -29,8 +29,11 @@ class Costume(Clothes):
     def fabric(self):
         return 2 * self.H + 0.3
 
+def calc_fabrics(*clothes):
+    return sum([c.fabric for c in clothes])
 
 myCoat = Coat("My Coat", 10)
 myCostume = Costume("My Costume", 15)
+myCostume2 = Costume("New Costume", 16)
 
-print(f"myCoat fabric = {myCoat.fabric}\nmyCostume fabric = {myCostume.fabric}\nTotal = {myCoat.fabric + myCostume.fabric}")
+print(calc_fabrics(myCoat, myCostume, myCostume2))
