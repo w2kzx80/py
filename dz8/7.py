@@ -16,6 +16,7 @@ class Complex:
     def __str__(self):
         return f"({self.a} + {self.b}*i)"
 
+
 c1 = Complex(5, 4)
 c2 = Complex(6, 0)
 c3 = Complex(2, 3)
