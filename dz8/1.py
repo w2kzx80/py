@@ -18,7 +18,7 @@ class Date:
             day, month, year = [int(s) for s in datestr.split('-')]
             if month<1 or month>12:
                 return False
-            if day<1 or day>30:
+            if day<1 or day>31:
                 return False
             return True
         except:
